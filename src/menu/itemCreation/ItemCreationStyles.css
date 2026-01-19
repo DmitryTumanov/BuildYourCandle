@@ -1,0 +1,21 @@
+.item-type-list {
+    text-align: center;
+    padding-top: 0;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+}
