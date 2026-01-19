@@ -22,7 +22,7 @@ function SceneCanvas(props: SceneCanvasProps) {
     const builder = useAppSelector(getBuilderState);
     const navigation = useAppSelector(getNavigationState);
     const [, forceUpdate] = useReducer(x => x + 1, 0);
-    useMemo(() => forceUpdate(), [builder.items]);
+    useMemo(() => {console.log(builder.items); forceUpdate();}, [builder.items]);
 
     const updateControls = () => {
         dispatch(updateControlsVisibility());

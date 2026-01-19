@@ -3,7 +3,7 @@ import {IconButton} from "@mui/material";
 import RoundBoxButton from "../../menu/buttons/RoundBoxButton";
 import React from "react";
 import {BUILDER_PAGE, ITEM_CREATION_STAGE_1_PAGE, ITEM_CREATION_STAGE_2_PAGE} from "../../utils/constants";
-import {getBuilderState, getNavigationState, useAppDispatch, useAppSelector} from "../../store/hooks";
+import {getNavigationState, useAppDispatch, useAppSelector} from "../../store/hooks";
 import {changeEditingIndex, restoreCandleItemsHistory} from "../../store/builderSlice";
 import {updatePage} from "../../store/navigationSlice";
 import DoneIcon from '@mui/icons-material/Done';
@@ -12,7 +12,6 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function ModelEditItemStep1Menu() {
     const dispatch = useAppDispatch();
-    const builder = useAppSelector(getBuilderState);
     const navigation = useAppSelector(getNavigationState);
 
     if (navigation.currentPage !== ITEM_CREATION_STAGE_1_PAGE) {

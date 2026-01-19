@@ -4,12 +4,12 @@ import Menu from "./menu/Menu";
 import {Grid} from "@mui/material";
 import Builder from "./builder/Builder";
 import { CANDLE_ITEM_TYPES } from './utils/constants';
-import GlbToImage from "./GlbToImage";
 import {useGLTF} from "@react-three/drei";
-import {mapCandleType} from "./utils/mappers";
+// import GlbToImage from "./GlbToImage";
+// import {mapCandleType} from "./utils/mappers";
 
 function App() {
-    CANDLE_ITEM_TYPES.map((type, index) => useGLTF.preload(type.file))
+    CANDLE_ITEM_TYPES.map((type, _) => useGLTF.preload(type.file))
     return (
         <Grid container>
             <Menu/>
