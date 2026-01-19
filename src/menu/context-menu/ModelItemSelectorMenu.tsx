@@ -29,7 +29,6 @@ function ModelItemSelectorMenu(props: ModelItemSelectorMenuProps) {
                 <RoundBoxButton
                     isSelected={false}
                     key={"item_menu_selector"}
-                    hoverEnabled={true}
                     onClick={() => updateSelectedIndex()}
                     customSx={{width: "15px", height: "15px", bgcolor: "#CCCCCC"}}
                     hide={builder.hideControls}

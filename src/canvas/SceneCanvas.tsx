@@ -35,7 +35,6 @@ function SceneCanvas(props: SceneCanvasProps) {
                 <RoundBoxButton
                     isSelected={builder.hideControls}
                     key={"new_item_button"}
-                    hoverEnabled={false}
                     onClick={() => updateControls()}
                     customSx={{
                         position: 'absolute',

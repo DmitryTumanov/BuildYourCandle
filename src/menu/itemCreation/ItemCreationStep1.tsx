@@ -25,7 +25,6 @@ function ItemCreationStep1() {
                 <RoundBoxButton
                     isSelected={builder.items[builder.editingItemIndex].type.name === type.name}
                     key={index.toString()}
-                    hoverEnabled={true}
                     customSx={{width: "56px", height: "56px", margin: "5px 0 0 0"}}
                     onClick={() => updateItemType(index)}
                 >

@@ -40,7 +40,6 @@ function ModelBuilderMenu() {
                 <RoundBoxButton
                     isSelected={false}
                     key={"new_item_button"}
-                    hoverEnabled={false}
                     onClick={() => createAndEditNewItem()}
                     hide={builder.hideControls}
                 >

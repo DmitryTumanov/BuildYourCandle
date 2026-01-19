@@ -38,7 +38,6 @@ function ModelEditItemStep1Menu() {
                 <RoundBoxButton
                     isSelected={false}
                     key={"new_item_button"}
-                    hoverEnabled={false}
                     onClick={() => nextEditStep()}
                 >
                     <IconButton
@@ -55,7 +54,6 @@ function ModelEditItemStep1Menu() {
                 <RoundBoxButton
                     isSelected={false}
                     key={"new_item_button"}
-                    hoverEnabled={false}
                     onClick={() => cancelCurrentStep()}
                 >
                     <IconButton

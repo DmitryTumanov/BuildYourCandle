@@ -54,7 +54,6 @@ function ModelSelectedItemMenu() {
                 flexDirection: 'row'
             }}>
                 <RoundBoxButton
-                    hoverEnabled={false}
                     isSelected={false}
                     customSx={{width: "40px", height: "40px"}}
                     onClick={() => editItem()}
@@ -73,7 +72,6 @@ function ModelSelectedItemMenu() {
                 </RoundBoxButton>
                 {builder.items[builder.selectedItemIndex].type.flippable && (
                     <RoundBoxButton
-                        hoverEnabled={false}
                         isSelected={false}
                         customSx={{width: "40px", height: "40px"}}
                         onClick={() => reverseItem()}
@@ -92,7 +90,6 @@ function ModelSelectedItemMenu() {
                     </RoundBoxButton>
                 )}
                 <RoundBoxButton
-                    hoverEnabled={false}
                     isSelected={false}
                     customSx={{width: "40px", height: "40px"}}
                     onClick={() => deleteItem()}
